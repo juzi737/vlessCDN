@@ -3,16 +3,9 @@
 在服务器上执行以下命令：
 ```bash
 wget https://raw.githubusercontent.com/juzi737/vlessCDN/main/vlessCDN.sh
-```
-
-赋予执行权限：
-```bash
 chmod +x vlessCDN.sh
-
-
-运行脚本：
-```bash
 sudo ./vlessCDN.sh
+```
 
 
 ✅ 这是最常用、最稳定的方式。下载的就是原始 .sh 文件，无多余内容。
@@ -20,29 +13,20 @@ sudo ./vlessCDN.sh
 🌀 方法二：使用 curl 下载
 
 如果系统没有 wget，可以用 curl：
-
+```bash
 curl -O https://raw.githubusercontent.com/juzi737/vlessCDN/main/vlessCDN.sh
-
-
-赋予执行权限：
-
 chmod +x vlessCDN.sh
-
-
-执行脚本：
-
 sudo ./vlessCDN.sh
+```
 
 🔄 一键更新 Sing-box UUID
 
 执行下面命令即可 自动生成新 UUID、更新配置并重启 Sing-box：
-
+```bash
 NEW_UUID=$(cat /proc/sys/kernel/random/uuid) && sudo sed -i "s/\"uuid\": \".*\"/\"uuid\": \"$NEW_UUID\"/" /etc/sing-box/config.json && sudo systemctl restart sing-box && echo -e "\n✅ UUID 已更新成功！\n🔑 新的 UUID：$NEW_UUID\n"
+```
 
-
-该命令会自动：
-
-生成随机 UUID
+该命令会自动：生成随机 UUID
 
 替换 /etc/sing-box/config.json 中的旧 UUID
 
@@ -97,9 +81,9 @@ Sing-box
 如果使用 Cloudflare，请先在 DNS 面板中添加你的域名解析
 
 可在执行前查看脚本源码确保安全性：
-
+```bash
 curl -Ls https://raw.githubusercontent.com/juzi737/vlessCDN/main/vlessCDN.sh | less
-
+```
 
 ⭐ 如果这个项目对你有帮助，请在 GitHub
  上点个 Star 支持！
