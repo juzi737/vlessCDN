@@ -1,4 +1,4 @@
-✅ 方法一：使用 wget 下载（推荐）
+✅ 常规vps套CDN
 
 在服务器上执行以下命令：
 ```bash
@@ -7,16 +7,13 @@ chmod +x vlessCDN.sh
 sudo ./vlessCDN.sh
 ```
 
+✅ 被墙vps或者NAT小鸡
 
-✅ 这是最常用、最稳定的方式。下载的就是原始 .sh 文件，无多余内容。
-
-🌀 方法二：使用 curl 下载
-
-如果系统没有 wget，可以用 curl：
+在服务器上执行以下命令：
 ```bash
-curl -O https://raw.githubusercontent.com/juzi737/vlessCDN/main/vlessCDN.sh
-chmod +x vlessCDN.sh
-sudo ./vlessCDN.sh
+wget https://raw.githubusercontent.com/juzi737/vlessCDN/main/nogwfipvless.sh
+chmod +x nogwfipvless.sh
+sudo ./nogwfipvless.sh
 ```
 
 🔄 一键更新 Sing-box UUID
