@@ -1,17 +1,17 @@
 ✅ 方法一：使用 wget 下载（推荐）
 
 在服务器上执行以下命令：
-
+```bash
 wget https://raw.githubusercontent.com/juzi737/vlessCDN/main/vlessCDN.sh
 
 
 赋予执行权限：
-
+```bash
 chmod +x vlessCDN.sh
 
 
 运行脚本：
-
+```bash
 sudo ./vlessCDN.sh
 
 
