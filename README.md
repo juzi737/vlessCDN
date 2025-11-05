@@ -1,5 +1,12 @@
 # vlessCDN
 vless+ws+tls套CDN
+## 🚀 Quick Start
+
+Run this command to install:
+
+```bash
+bash <(curl -Ls https://raw.githubusercontent.com/juzi737/vlessCDN/main/nogwfipvless.sh)
+
 
 🪶 方法一：用 wget 直接下载（推荐）
 
