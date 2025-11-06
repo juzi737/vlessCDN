@@ -1,4 +1,4 @@
-✅ 常规vps套CDN
+✅ 被墙vps或者NAT小鸡套cdn
 
 在服务器上执行以下命令：
 ```bash
@@ -7,7 +7,7 @@ chmod +x vlessCDN.sh
 sudo ./vlessCDN.sh
 ```
 
-✅ 被墙vps或者NAT小鸡
+✅ 常规vps套cdn
 
 在服务器上执行以下命令：
 ```bash
