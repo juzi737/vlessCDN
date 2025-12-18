@@ -31,6 +31,15 @@ NEW_UUID=$(cat /proc/sys/kernel/random/uuid) && sudo sed -i "s/\"uuid\": \".*\"/
 
 打印新的 UUID 供客户端使用
 
+证书申请命令（方案一）
+```bash
+bash <(curl -s https://raw.githubusercontent.com/juzi737/vlessCDN/main/zs.sh)
+```
+
+证书申请命令（方案二）
+```bash
+bash <(curl -s https://ghproxy.com/https://raw.githubusercontent.com/juzi737/vlessCDN/main/zs.sh)
+```
 ⚙️ 功能简介
 
 🧩 一键安装 Sing-box + VLESS + WS + TLS
